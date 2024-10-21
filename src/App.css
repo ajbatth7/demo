@@ -1,38 +1,68 @@
 .App {
   text-align: center;
+  background-color: #EBF4F6;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  background-color: #132247;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.logo{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 3px 5px;
+}
+
+.logo-image{
+  height: 6vh;
+  margin: 5px 10px;
+  border-radius: 33px;
+  background-color:#EBF4F6;
+}
+
+.logo-name{
   color: white;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 23px 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.header-list{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.header-list li{
+  margin: 0px 5px;
+}
+
+.header-btn {
+  padding: 10px 20px;
+  border-radius: 9px;
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgba(235, 244, 246, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Adds smooth animation */
+}
+
+.header-btn:hover {
+  background-color: #37B7C3;
+  color: white;
+  box-shadow: 5px 5px 15px rgba(235, 244, 246, 0.5); /* Darker, larger shadow on hover */
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+
