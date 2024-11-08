@@ -1,5 +1,8 @@
 .header{
-    background-color: #132247;
+    background-color: #132247ef;
+    border-radius: 30px;
+    margin: 0px 7px;
+    
   }
   
   .logo{
@@ -44,7 +47,7 @@
   
   .header-btn {
     padding: 10px 20px;
-    border-radius: 9px;
+    border-radius: 20px;
     font-size: 1.1em;
     font-weight: 500;
     cursor: pointer;

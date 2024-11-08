@@ -1,4 +1,13 @@
+.Body{
+    display: flex ;
+}
+
 .Tables {
-    width: 40%;
+    width: 34%;
     margin-left: 0px; /* Ensure the div starts from the left */
+}
+
+.Graphs{
+    width: 64%;
+    margin-right: 0px;
 }

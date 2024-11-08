@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Table.css'; // Importing the CSS file
 
-const Table = ({ name, data }) => {
-  console.log(name);
+const Table = ({ name, data , setTableName, setTableItem}) => {
+  
 
   const [expanded, setExpanded] = useState(true); // State to handle expansion (initially expanded)
   const [sortedData, setSortedData] = useState([]); // State for sorted data
@@ -74,7 +74,14 @@ const Table = ({ name, data }) => {
                   const value = row[header];
                   const formattedValue = formatInMillions(value); // Formatted value in millions
                   return (
-                    <td key={headerIndex} title={value}> {/* Show exact value on hover */}
+                    <td 
+                      key={headerIndex} 
+                      title={value}
+                      onClick={() => {
+                        setTableItem(value); // Update with the value
+                        setTableName(name);  // Update with the name
+                      }}
+                    > {/* Show exact value on hover */}
                       {String(header)!=='DayChange'?formattedValue:String(row[header])+'%' }
                     </td>
                   );
